@@ -152,70 +152,18 @@ when deploying with HTTPS.
 
 ---
 
-## How Security Works
 
-### Password Security
 
-Passwords are never stored in plain text. The application uses `Flask-Bcrypt` to hash passwords with automatic salting before storing them in the database.
 
-### SQL Injection Protection
-
-SQL injection attacks are prevented using SQLAlchemy ORM queries and parameterized database operations. Raw SQL string concatenation is avoided.
-
-### CSRF Protection
-
-CSRF protection is enabled globally using Flask-WTF. Every sensitive form request includes secure CSRF tokens.
-
-### Session Security
-
-The application uses:
-
-* Flask-Login session management
-* HTTPOnly cookies
-* SameSite cookie policy
-* Configurable secure cookies
-* Controlled session expiration
-
-### Account Lockout
-
-After multiple failed login attempts, the account is temporarily locked to reduce brute-force attacks.
 
 ### Two-Factor Authentication
 
 2FA is implemented using `pyotp` and Google Authenticator compatible TOTP verification codes.
 
-### Password Reset
 
-Password reset functionality uses signed and time-limited tokens through `itsdangerous`.
 
 ---
 
-## Threats Mitigated
-
-This project helps reduce common web authentication attacks including:
-
-* SQL Injection
-* Brute Force Attacks
-* Weak Password Attacks
-* Session Hijacking
-* CSRF Attacks
-* Unauthorized Dashboard Access
-* Plain Text Password Storage
-
----
-
-## Security Best Practices Implemented
-
-* Secure password hashing using bcrypt
-* Strong password policy validation
-* Secure session cookie configuration
-* CSRF token validation
-* ORM-based database queries
-* Generic authentication error handling
-* Token expiration mechanisms
-* Protected authentication routes
-
----
 
 ## Screenshots
 

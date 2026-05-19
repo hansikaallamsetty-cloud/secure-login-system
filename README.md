@@ -47,6 +47,8 @@ A production-style Flask authentication project designed for cybersecurity portf
 CYBERSECURELOGIN/
 │
 ├── routes/
+├── demo/
+│   └── secure-login-demo.mp4
 │
 ├── screenshots/
 │   ├── 2fa.png
@@ -85,6 +87,13 @@ CYBERSECURELOGIN/
 └── requirements.txt
 ```
 
+---
+
+## Project Demo
+
+Complete application demonstration video:
+
+[Watch Demo Video](demo/secure-login-demo.mp4)
 ---
 
 ## Installation
@@ -210,80 +219,90 @@ This project helps reduce common web authentication attacks including:
 
 ## Screenshots
 
-### 1. Secure Login Page
-The login page provides secure authentication with bcrypt password verification, CSRF protection, remember-me functionality, and protected session handling.
-
-![Login Page](screenshots/login.png)
-
----
-
-### 2. User Registration Page
-The registration page validates user credentials, enforces strong password policies, and prevents duplicate account creation.
+### 1. User Registration Page
+The registration page allows users to create secure accounts with password policy validation and duplicate email prevention.
 
 ![Register Page](screenshots/register1.png)
 
 ---
 
-### 3. Registration Validation
-This screen demonstrates secure form validation and strong password requirement enforcement.
+### 2. Registration Validation
+This screen demonstrates secure input validation and strong password requirement enforcement during user registration.
 
 ![Registration Validation](screenshots/register2.png)
 
 ---
 
+### 3. Secure Login Page
+The login page implements secure authentication with bcrypt password verification, CSRF protection, and session handling.
+
+![Login Page](screenshots/login.png)
+
+---
+
 ### 4. Secure Dashboard
-The dashboard is accessible only after successful authentication and displays protected user content securely.
+The dashboard is protected and accessible only after successful user authentication.
 
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-### 5. Profile Management
-The profile page allows users to manage account settings and configure additional security options such as 2FA.
+### 5. User Profile Page
+The profile page allows users to manage account settings and security configurations.
 
-![Profile](screenshots/profile.png)
+![Profile Page](screenshots/profile.png)
 
 ---
 
 ### 6. Two-Factor Authentication Setup
-Users can enable Google Authenticator compatible TOTP-based Two-Factor Authentication for additional account security.
+Users can enable Google Authenticator compatible TOTP-based Two-Factor Authentication for enhanced account security.
 
 ![2FA Setup](screenshots/set_2fa.png)
 
 ---
 
-### 7. Two-Factor Authentication Verification
-During login, users must verify their identity using a secure 6-digit TOTP verification code.
+### 7. Additional 2FA Configuration
+Additional configuration workflow for enabling and managing Two-Factor Authentication.
 
-![2FA Verification](screenshots/2fa.png)
-
----
-
-### 8. Additional 2FA Configuration
-Additional 2FA setup and verification workflow screen.
-
-![2FA Additional](screenshots/set_2fa1.png)
+![2FA Configuration](screenshots/set_2fa1.png)
 
 ---
 
-### 9. Secure Logout Flow
-The logout functionality securely destroys active user sessions and prevents unauthorized session reuse.
+### 8. Secure Logout Workflow
+The logout functionality securely destroys active sessions and prevents unauthorized session reuse.
 
 ![Logout](screenshots/logout.png)
 
 ---
 
-### 10. Complete Project Folder Structure
+### 9. Complete Application Preview
+Overall preview of the Secure Login System application interface.
+
+![Application Preview](screenshots/secure_login.png)
+
+---
+
+### 10. Two-Factor Authentication Verification
+Users must verify their identity using a secure 6-digit TOTP verification code during login.
+
+![2FA Verification](screenshots/2fa.png)
+
+---
+
+### 11. Additional 2FA Verification Screen
+Additional authentication verification workflow screen for enhanced account protection.
+
+![2FA Verification Additional](screenshots/2fa1.png)
+
+
+### 12. Complete Project Folder Structure
 The project follows a modular and organized Flask application structure for maintainability and scalability.
 
 ![Folder Structure](screenshots/folder.png)
 
 ---
 
-### 11. Complete Application Preview
-Overall preview of the secure authentication application interface.
 
-![Application Preview](screenshots/secure_login.png)
 ## Learning Outcomes
 
 Through this project, I gained practical experience with:

@@ -93,7 +93,7 @@ CYBERSECURELOGIN/
 
 Complete application demonstration video:
 
-[Watch Demo Video](demo/secure-login-demo.mp4)
+[Watch Demo Video](https://github.com/hansikaallamsetty-cloud/secure-login-system/blob/main/demo/secure-login-demo.mp4)
 ---
 
 ## Installation
